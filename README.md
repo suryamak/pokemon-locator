@@ -2,7 +2,7 @@
 Find out if you can _really_ catch 'em all.
 
 ## About
-* ```find.py```: webcrawler for [Serebii.net](https://serebii.net/) that finds complete and accurate methods of obtaining a Pokemon for a single game version only. Fully supports core-series games from generations 5-7.
+* ```find.py```: webcrawler for [Serebii.net](https://serebii.net/) that finds complete and accurate methods of obtaining a Pokemon for a single game version only. Fully supports core-series games from generations 4-7.
 * ```fetch.py```: uses the [PokeAPI](https://pokeapi.co/) to look up a Pokemon and how it is obtained across a wider range of core-series games, but location information may be incomplete
 
 ## Usage

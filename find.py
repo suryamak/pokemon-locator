@@ -9,7 +9,7 @@ def find(mon, gen, dex, version):
     r = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
     soup = BeautifulSoup(r.text, 'html.parser')
     tr_filter = soup.find_all("tr")
-    for tr in tr_filter:
+    for tr in (tr_filter[::-1] if gen < 5 else tr_filter):
         version_tag = tr.find_all("td", {"class" : "{}".format(version)})
         if len(version_tag):
             for td in version_tag:
@@ -27,6 +27,6 @@ try:
     print()
     print(poke.upper())
     print('{}:  '.format(version), method)
-    
+
 except:
     print("Invalid command line arguments")
